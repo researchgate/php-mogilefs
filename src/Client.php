@@ -379,7 +379,6 @@ class Client
             [
                 'domain' => $this->domain,
                 'prefix' => $prefix,
-                'after' => $after,
                 'limit' => (int) $limit,
             ]
         );
