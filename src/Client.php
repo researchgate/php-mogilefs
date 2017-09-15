@@ -200,7 +200,7 @@ class Client
             if (!$fh) {
                 throw new RuntimeException(get_class($this) . "::put failed to open file");
             }
-            if (!$length) {
+            if (!isset($length) || !$length) {
                 $length = filesize($file);
             }
         } else {
